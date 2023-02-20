@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: padding-box;
+}
+body {
+    background-color: #222222;
+}
+
+/*tabla de horarios*/
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.table_horarios {
+    padding: 10px;
+    border: 1px solid #00566b;
+    border-radius: 10px;
+    background-color: #b9ced3;
+    text-shadow: 1px 2px #ffffff50;
+    filter: drop-shadow(0 0 2px #000);
+    
+}
+.table_dia_l, .table_dia_mm, .table_dia_jv {
+    font-size: 28px;
+    padding: 4px 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.s_lunes {
+    color: #0050db;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 5px ;
+ }   
+
+.s_martes_mierc {
+    color: #a82700;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 5px ;
+}
+
+.s_jueves_vier {
+    color: #F004A2;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 5px ;
+}
+th {
+    padding: 15px 25px 5px 5px;
+}
+.horario_title {
+    color: #c9d5eb;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 40px;
+    filter: drop-shadow(2px 0 1px #000);
+}
+    
+/* header */
+
+.header {
+    display: flex;
+    background-color: #66858d;
+    width: 100%;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+   
+}
+.header .logo img{
+    height: 90px;
+    width: auto;
+    border-radius: 20%;
+    filter: drop-shadow(0 0 4px #000);
+    
+}
+.header .navigator ul{
+    margin: 0 80px;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+}
+
+.header .navigator ul li {
+    list-style: none;
+    margin: 0 4px;
+}
+.header .navigator ul li a {
+    text-decoration: none;
+    color: #73d8d8;
+    background-color: #222222;
+    border-radius: 4px;
+    padding: 20px;
+    
+}   
+
+/* footer */
+
+.footer {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #66858d;
+    color: #ffffff;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.nav_footer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    
+}
+.nav_footer a {
+    text-decoration: none;
+    color: #000;
+    margin: 10px 0;
+}
+.footer .info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    font-size: 16px;
+}
+.footer .info p {
+    padding: 6px;
+    color: #000;
+}
+.footer h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.footer .redes{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer .redes a{
+    text-decoration: none;
+    color: #000;
+}
+/* formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #b9ced3;
+    border: 1px solid #66858d;
+    width: 390px;
+    margin: 20px auto;
+    padding: 10px;
+}
+form input {
+    width: 80%;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #73d8d8;
+    color: #b9ced3;
+    outline: none;
+}
+form label {
+    margin-bottom: 10px;
+}
+form p {
+    display: flex;
+}
+form p .radio {
+    margin: 0 10px;
+
+}
+form .area_title {
+    margin: 20px 0 10px;
+}
+form textarea {
+    resize: none;
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+form .btn {
+    width: 140px;
+    padding: 10px;
+    background-color: #00566b;
+    color: #c8e0e6;
+    filter: drop-shadow(0 0 2px #9e9e9e);
+    margin-bottom: 10px;
+    font-weight: 700;
+    border: none;
+}
+ form select {
+    padding: 5px;
+    background: none;
+    border: none;
+    color: #c8e0e6;
+    font-size: 20px;
+    border-bottom: 2px solid #73d8d8;
+}
+form select:focus {
+    transition: 0.6s ease-in-out;
+    border-bottom: 2px solid #e28752;
+    color: #e28752
+}
+form input:focus {
+    transition: 0.6s ease-in-out;
+    border-bottom: 2px solid #e28752;
+}
+form .btn:hover {
+    background-color: #e28752;
+    transition: 0.8s all;
+    text-shadow: 1px 1px #222222;
+    font-size: 18px;
+}
+form .btn:focus {
+    border: none;
+    background-color: #73d8d8;
+    transition: 0.8s all;
+}
